@@ -41,24 +41,24 @@ body {
 
 /* ABOUT */
 .about {
-  background-color: rgb(197, 197, 197);
+  background-color: rgb(131, 131, 131);
 }
 
 .about-center {
   background-color: greenyellow;
 }
 
-.about {
-  padding: 3rem 1.5rem;
-  margin-bottom: 2rem;
-  background-color: rgb(121, 121, 121);
-}
-
 .about-pic {
   /* height: 300px; */
-  background-color: rgb(121, 121, 121);
+  background-color: rgb(199, 199, 199);
   padding: 3rem 1.5rem;
   margin-bottom: 2rem;
+}
+
+.about-text {
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  background-color: rgb(199, 199, 199);
 }
 
 @media screen and (min-width: 676px) {
@@ -141,5 +141,24 @@ body {
 @media screen and (min-width: 992px) {
   .testimonials-center {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* FOOTER */
+.footer {
+  background-color: rgb(207, 207, 207);
+}
+
+.footer-links {
+  background-color: greenyellow;
+  list-style-type: none;
+  text-align: center;
+}
+
+@media screen and (min-width: 350px) {
+  .footer-links {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: min-content 1fr min-content;
   }
 }
