@@ -38,6 +38,7 @@ h2 {
 h3 {
   font-size: calc(2.1rem + 0.6vw);
   font-weight: 600;
+  padding-bottom: 1rem;
 }
 
 p {
@@ -154,10 +155,6 @@ small {
   /* background-color: rgb(121, 121, 121); */
 }
 
-.projects-title {
-  padding-bottom: 2rem;
-}
-
 .figure-caption {
   font-size: 1.4rem;
   color: #6c757d;
@@ -173,13 +170,24 @@ small {
   background-color: grey;
 }
 
+.blockquote {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.blockquote > p {
+  line-height: 3rem;
+  font-size: 2rem;
+}
+
 .testimonials-center {
   background-color: greenyellow;
 }
 
 .testimonial {
   /* padding: 3rem 1.5rem; */
-  margin-bottom: 2rem;
+  margin-bottom: 2.4rem;
+
   /* text-align: center; */
 }
 
@@ -273,6 +281,14 @@ small {
 }
 
 @media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 5.2rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
   .navbar,
   .section {
     grid-template-columns: 1fr minmax(auto, 1140px) 1fr;
@@ -287,5 +303,12 @@ small {
 
   .footer-links {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .navbar,
+  .section {
+    grid-template-columns: 1fr minmax(auto, 1320px) 1fr;
   }
 }
