@@ -149,9 +149,23 @@ small {
 
 .project {
   /* padding: 3rem 1.5rem; */
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   /* text-align: center; */
-  background-color: rgb(121, 121, 121);
+  /* background-color: rgb(121, 121, 121); */
+}
+
+.projects-title {
+  padding-bottom: 2rem;
+}
+
+.figure-caption {
+  font-size: 1.4rem;
+  color: #6c757d;
+  /* color: red; */
+}
+
+.figure-img {
+  padding-bottom: 1.5rem;
 }
 
 /* TESTIMONIALS */
@@ -180,6 +194,10 @@ small {
   text-align: center;
 }
 
+/* MEDIA */
+/* MEDIA */
+/* MEDIA */
+/* MEDIA */
 /* MEDIA */
 /* MEDIA */
 /* MEDIA */
