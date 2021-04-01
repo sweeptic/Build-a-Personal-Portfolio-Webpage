@@ -47,14 +47,6 @@ body {
   display: flex;
 }
 
-@media screen and (min-width: 350px) {
-  .nav-center {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-  }
-}
-
 .nav-center {
   background-color: greenyellow;
   width: 90vw;
@@ -70,18 +62,6 @@ body {
 
 .nav-links {
   list-style-type: none;
-}
-
-@media screen and (min-width: 350px) {
-  .nav-links {
-    display: flex;
-    justify-content: flex-end;
-    /* margin-right: 2rem; */
-  }
-
-  .nav-links li {
-    margin-right: 2rem;
-  }
 }
 
 /* ABOUT */
@@ -106,24 +86,6 @@ body {
   background-color: rgb(199, 199, 199);
 }
 
-@media screen and (min-width: 676px) {
-  .about-center {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content 1fr;
-    column-gap: 1rem;
-  }
-  .about-title {
-    grid-column: 1 / -1;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .about-center {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 /* PROJECTS */
 .projects {
   background-color: rgb(197, 197, 197);
@@ -138,23 +100,6 @@ body {
   margin-bottom: 2rem;
   /* text-align: center; */
   background-color: rgb(121, 121, 121);
-}
-
-@media screen and (min-width: 676px) {
-  .projects-center {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: min-content 1fr;
-    column-gap: 7rem;
-  }
-  .projects-title {
-    grid-column: 1 / -1;
-  }
-}
-@media screen and (min-width: 992px) {
-  .projects-center {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 
 /* TESTIMONIALS */
@@ -172,23 +117,6 @@ body {
   /* text-align: center; */
 }
 
-@media screen and (min-width: 676px) {
-  .testimonials-center {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: min-content 1fr;
-    column-gap: 10rem;
-  }
-  .testimonial-title {
-    grid-column: 1 / -1;
-  }
-}
-@media screen and (min-width: 992px) {
-  .testimonials-center {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 /* FOOTER */
 .footer {
   background-color: rgb(207, 207, 207);
@@ -200,10 +128,74 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 350px) {
+/* MEDIA */
+/* MEDIA */
+/* MEDIA */
+/* MEDIA */
+
+@media screen and (min-width: 576px) {
   .footer-links {
     display: grid;
     justify-items: center;
     grid-template-columns: min-content 1fr min-content;
   }
+  .nav-center {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    /* margin-right: 2rem; */
+  }
+
+  .nav-links li {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .testimonials-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content 1fr;
+    column-gap: 10rem;
+  }
+  .testimonial-title {
+    grid-column: 1 / -1;
+  }
+  .about-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+    column-gap: 1rem;
+  }
+  .about-title {
+    grid-column: 1 / -1;
+  }
+  .projects-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content 1fr;
+    column-gap: 7rem;
+  }
+  .projects-title {
+    grid-column: 1 / -1;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .about-center {
+    grid-template-columns: 1fr 1fr;
+  }
+  .projects-center {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .testimonials-center {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
 }
