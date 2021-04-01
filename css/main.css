@@ -41,6 +41,10 @@ h3 {
   padding-bottom: 1rem;
 }
 
+h5 {
+  font-size: 2rem;
+}
+
 p {
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -180,6 +184,15 @@ small {
   font-size: 2rem;
 }
 
+.blockquote-footer {
+  font-size: 1.4rem;
+  color: #6c757d;
+}
+
+.blockquote-footer::before {
+  content: '— ';
+}
+
 .testimonials-center {
   background-color: greenyellow;
 }
@@ -194,12 +207,31 @@ small {
 /* FOOTER */
 .footer {
   background-color: rgb(207, 207, 207);
+  justify-items: center;
 }
 
 .footer-links {
   background-color: greenyellow;
   list-style-type: none;
-  text-align: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--color-grey-dark-1);
+  font-size: 1.6rem;
+}
+
+.footer-links div {
+  margin-bottom: 2rem;
+}
+
+.footer-links i {
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+
+.footer-links h5 {
+  padding-bottom: 0.7rem;
 }
 
 /* MEDIA */
@@ -214,9 +246,13 @@ small {
 @media screen and (min-width: 576px) {
   .footer-links {
     display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
+
+  .footer {
+    justify-items: normal;
+  }
+
   .nav-center {
     display: grid;
     grid-template-columns: auto 1fr;
