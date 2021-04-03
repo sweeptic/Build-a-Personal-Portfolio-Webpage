@@ -1,5 +1,9 @@
 :root {
   --color-grey-dark-1: #252529;
+  --color-grey-1: #d1d1d1;
+  --color-grey-2: #fff;
+  --color-grey-3: rgb(119, 119, 119);
+  --color-primary-blue: #0088cc;
 }
 
 * {
@@ -63,6 +67,14 @@ small {
   font-size: 0.875em;
 }
 
+.inverse-highlighted-black {
+  display: inline-block;
+  background-color: var(--color-grey-dark-1);
+  color: #fff;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+
 .text-muted {
   color: #6c757d !important;
   /* color: red; */
@@ -89,7 +101,7 @@ small {
   position: sticky;
   top: 0;
   min-height: 5rem;
-  background-color: rgb(204, 204, 204);
+  background-color: var(--color-grey-1);
   display: flex;
 }
 .section {
@@ -103,9 +115,12 @@ small {
   grid-template-columns: minmax(12px, 1fr) minmax(auto, 540px) minmax(12px, 1fr);
 }
 
+.navbar {
+  border-top: 5px var(--color-primary-blue) solid;
+}
+
 .nav-center {
   grid-column: 2/3;
-  background-color: greenyellow;
 }
 
 .section-center {
@@ -130,16 +145,16 @@ small {
 
 /* ABOUT */
 .about {
-  background-color: rgb(131, 131, 131);
+  background-color: var(--color-grey-2);
 }
 
 .about-center {
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
 }
 
 .about-pic {
   /* height: 300px; */
-  background-color: rgb(199, 199, 199);
+  /* background-color: rgb(199, 199, 199); */
   /* padding: 3rem 1.5rem; */
   margin-bottom: 2rem;
 }
@@ -152,7 +167,7 @@ small {
 .about-text {
   /* padding: 3rem 1.5rem; */
   margin-bottom: 2rem;
-  background-color: rgb(199, 199, 199);
+  /* background-color: rgb(199, 199, 199); */
 }
 
 .about-title {
@@ -165,11 +180,16 @@ small {
 
 /* PROJECTS */
 .projects {
-  background-color: rgb(197, 197, 197);
+  background-color: var(--color-primary-blue);
+}
+
+.projects-title {
+  color: var(--color-grey-2);
+  padding-bottom: 2rem;
 }
 
 .projects-center {
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
 }
 
 .project {
@@ -181,7 +201,8 @@ small {
 
 .figure-caption {
   font-size: 1.4rem;
-  color: #6c757d;
+  /* color: #6c757d; */
+  color: var(--color-grey-2);
   /* color: red; */
 }
 
@@ -191,7 +212,7 @@ small {
 
 /* TESTIMONIALS */
 .testimonials {
-  background-color: grey;
+  background-color: var(--color-grey-2);
 }
 
 .blockquote {
@@ -214,7 +235,7 @@ small {
 }
 
 .testimonials-center {
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
 }
 
 .testimonial {
@@ -226,19 +247,21 @@ small {
 
 /* FOOTER */
 .footer {
-  background-color: rgb(207, 207, 207);
+  background-color: var(--color-grey-dark-1);
+  color: var(--color-grey-2);
   justify-items: center;
 }
 
 .footer-links {
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
   list-style-type: none;
 }
 
 .footer-links a {
   text-decoration: none;
-  color: var(--color-grey-dark-1);
+  color: var(--color-grey-3);
   font-size: 1.6rem;
+  text-transform: uppercase;
 }
 
 .footer-links div {
@@ -247,6 +270,13 @@ small {
 
 .footer-links i {
   font-size: 2rem;
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+}
+
+.footer-links li > i {
+  color: #0088cc;
+  padding: 0.7rem 0.7rem 0 1rem;
   padding-right: 1rem;
 }
 
