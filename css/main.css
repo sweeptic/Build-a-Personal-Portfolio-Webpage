@@ -1,8 +1,8 @@
 :root {
   --color-grey-dark-1: #252529;
   --color-grey-1: #d1d1d1;
-  --color-grey-2: #fff;
-  --color-grey-3: rgb(119, 119, 119);
+  --color-white: #fff;
+  --color-grey-2: rgb(119, 119, 119);
   --color-primary-blue: #0088cc;
 }
 
@@ -20,10 +20,6 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-
-  /* @media only screen and (max-width: $bp-large) {
-    font-size: 50%;
-  } */
 }
 
 body {
@@ -56,13 +52,6 @@ p {
   margin-bottom: 1rem;
 }
 
-/* .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: .5rem;
-  font-weight: 500;
-  line-height: 1.2;
-} */
-
 small {
   font-size: 0.875em;
 }
@@ -72,6 +61,7 @@ small {
   grid-template-rows: repeat(5, auto);
 }
 
+/* i only set this up because the test script required it. This settings not suitable for the original layout. */
 #welcome-section {
   height: 100vh;
 }
@@ -86,24 +76,15 @@ small {
 
 .text-muted {
   color: #6c757d !important;
-  /* color: red; */
 }
 
 .block {
   display: block;
 }
 
-.nav-center {
-  padding: 0 2rem;
-}
-
+/* NAVBAR */
 .navbar-brand {
   font-size: 2rem;
-}
-
-.nav-links {
-  font-size: 1.6rem;
-  color: rgba(0, 0, 0, 0.55);
 }
 
 .navbar {
@@ -113,16 +94,6 @@ small {
   min-height: 5rem;
   background-color: var(--color-grey-1);
   display: flex;
-}
-.section {
-  padding: 5rem 0;
-}
-
-.navbar,
-.section {
-  display: grid;
-  /* 576px - 2x20px */
-  grid-template-columns: minmax(12px, 1fr) minmax(auto, 540px) minmax(12px, 1fr);
 }
 
 .navbar {
@@ -137,6 +108,25 @@ small {
 .navbar-link:hover {
   color: #6c757d;
   transition: all 0.2s;
+}
+
+.navbar,
+.section {
+  display: grid;
+  grid-template-columns: minmax(12px, 1fr) minmax(auto, 540px) minmax(12px, 1fr);
+}
+
+.nav-links {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.nav-center {
+  padding: 0 2rem;
+}
+
+.section {
+  padding: 5rem 0;
 }
 
 .nav-center {
@@ -159,23 +149,15 @@ small {
 }
 
 .nav-links li:hover {
-  color: red;
   cursor: pointer;
 }
 
 /* ABOUT */
 .about {
-  background-color: var(--color-grey-2);
-}
-
-.about-center {
-  /* background-color: greenyellow; */
+  background-color: var(--color-white);
 }
 
 .about-pic {
-  /* height: 300px; */
-  /* background-color: rgb(199, 199, 199); */
-  /* padding: 3rem 1.5rem; */
   margin-bottom: 2rem;
 }
 
@@ -185,13 +167,11 @@ small {
 }
 
 .about-text {
-  /* padding: 3rem 1.5rem; */
   margin-bottom: 2rem;
-  /* background-color: rgb(199, 199, 199); */
 }
 
 .about-title {
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .about-position {
@@ -204,19 +184,12 @@ small {
 }
 
 .projects-title {
-  color: var(--color-grey-2);
+  color: var(--color-white);
   padding-bottom: 2rem;
 }
 
-.projects-center {
-  /* background-color: greenyellow; */
-}
-
 .project {
-  /* padding: 3rem 1.5rem; */
   margin-bottom: 5rem;
-  /* text-align: center; */
-  /* background-color: rgb(121, 121, 121); */
 }
 
 .project-desc {
@@ -228,11 +201,10 @@ small {
   font-size: 2rem;
 }
 
+/* FIGURE */
 .figure-caption {
   font-size: 1.4rem;
-  /* color: #6c757d; */
-  color: var(--color-grey-2);
-  /* color: red; */
+  color: var(--color-white);
 }
 
 .figure-img {
@@ -241,9 +213,14 @@ small {
 
 /* TESTIMONIALS */
 .testimonials {
-  background-color: var(--color-grey-2);
+  background-color: var(--color-white);
 }
 
+.testimonial {
+  margin-bottom: 2.4rem;
+}
+
+/* BLOCKQUOTE */
 .blockquote {
   margin-bottom: 1rem;
   font-size: 1.25rem;
@@ -263,32 +240,20 @@ small {
   content: '— ';
 }
 
-.testimonials-center {
-  /* background-color: greenyellow; */
-}
-
-.testimonial {
-  /* padding: 3rem 1.5rem; */
-  margin-bottom: 2.4rem;
-
-  /* text-align: center; */
-}
-
 /* FOOTER */
 .footer {
   background-color: var(--color-grey-dark-1);
-  color: var(--color-grey-2);
+  color: var(--color-white);
   justify-items: center;
 }
 
 .footer-links {
-  /* background-color: greenyellow; */
   list-style-type: none;
 }
 
 .footer-links a {
   text-decoration: none;
-  color: var(--color-grey-3);
+  color: var(--color-grey-2);
   font-size: 1.6rem;
   text-transform: uppercase;
 }
@@ -304,7 +269,7 @@ small {
 }
 
 .footer-links li > i {
-  color: #0088cc;
+  color: var(--color-primary-blue);
   padding: 0.7rem 0.7rem 0 1rem;
   padding-right: 1rem;
 }
@@ -313,13 +278,6 @@ small {
   padding-bottom: 0.7rem;
 }
 
-/* MEDIA */
-/* MEDIA */
-/* MEDIA */
-/* MEDIA */
-/* MEDIA */
-/* MEDIA */
-/* MEDIA */
 /* MEDIA */
 
 @media screen and (min-width: 576px) {
@@ -340,7 +298,6 @@ small {
   .nav-links {
     display: flex;
     justify-content: flex-end;
-    /* margin-right: 2rem; */
   }
 
   .nav-links li {
