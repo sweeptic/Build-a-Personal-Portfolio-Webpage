@@ -20,24 +20,24 @@
 
 
 
-  <nav class="navbar">
+  <nav class="navbar" id='navbar'>
     <div class="nav-center">
       <div class="nav-header navbar-brand">Portfolio</div>
       <ul class="nav-links">
-        <li>About</li>
-        <li>Projects</li>
-        <li>Testimonials</li>
-        <li>Links</li>
+        <li><a class="navbar-link" href="#section-about">About</a></li>
+        <li><a class="navbar-link" href="#section-projects">Projects</a></li>
+        <li><a class="navbar-link" href="#section-testimonials">Testimonials</a></li>
+        <li><a class="navbar-link" href="#section-links">Links</a></li>
       </ul>
     </div>
   </nav>
 
-  <section class="section about">
-    <div class="section-center about-center">
+  <section class="section about" id="welcome-section">
+    <div class="section-center about-center" id="section-about">
       <div class="about-title">
-        <h2>Firstname Lastname
-          <small class="text-muted block about-position">Job Position</small>
-        </h2>
+        <h1>John Doe
+          <small class="text-muted block about-position">Java Developer</small>
+        </h1>
       </div>
       <article class="about-pic"><img src="/img/690x400.png" alt=""></article>
       <article class="about-text">
@@ -62,39 +62,55 @@
     </div>
   </section>
 
-  <section class="section projects">
-    <div class="section-center projects-center">
+  <section class="section projects" id="section-projects">
+    <div class="section-center projects-center" id='projects'>
       <div class="projects-title">
         <h3>Featured projects</h3>
       </div>
       <article class="project">
         <figure class="figure">
           <img class="figure-img" src="img/510x400.png" alt="Portfolio Item Heading">
-          <figccaption class="figure-caption">Portfolio Item Heading</figccaption>
+          <figccaption class="figure-caption project-tile">Portfolio Item Heading</figccaption>
         </figure>
+        <p class='project-desc'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem sed doloribus ipsum
+          sapiente beatae, laborum, fugit consequuntur minus sequi laudantium corporis!
+        </p>
+        <a class="navbar-link" href="http://github.com">github project</a>
       </article>
       <article class="project">
         <figure class="figure">
           <img class="figure-img" src="img/510x400.png" alt="Portfolio Item Heading">
-          <figccaption class="figure-caption">Portfolio Item Heading</figccaption>
+          <figccaption class="figure-caption project-tile">Portfolio Item Heading</figccaption>
         </figure>
+        <p class='project-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, veniam!
+        </p>
+        <a class="navbar-link" href="http://github.com">github project</a>
       </article>
       <article class="project">
         <figure class="figure">
           <img class="figure-img" src="img/510x400.png" alt="Portfolio Item Heading">
-          <figccaption class="figure-caption">Portfolio Item Heading</figccaption>
+          <figccaption class="figure-caption project-tile">Portfolio Item Heading</figccaption>
         </figure>
+        <p class='project-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quam, dolorum eius
+          blanditiis saepe impedit
+          voluptatibus nulla cum odit atque aspernatur quis, cumque quae numquam dolor, iste nihil inventore corrupti?
+        </p>
+        <a class="navbar-link" href="http://github.com">github project</a>
       </article>
       <article class="project">
         <figure class="figure">
           <img class="figure-img" src="img/510x400.png" alt="Portfolio Item Heading">
-          <figccaption class="figure-caption">Portfolio Item Heading</figccaption>
+          <figccaption class="figure-caption project-tile">Portfolio Item Heading</figccaption>
         </figure>
+        <p class='project-desc'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta necessitatibus amet
+          facilis qui hic a?
+        </p>
+        <a class="navbar-link" href="http://github.com">github project</a>
       </article>
     </div>
   </section>
 
-  <section class="section testimonials">
+  <section class="section testimonials" id="section-testimonials">
     <div class="section-center testimonials-center">
       <div class="testimonial-title ">
         <h3 class="inverse-highlighted-black">Testimonial</h3>
@@ -132,47 +148,47 @@
     </div>
   </section>
 
-  <footer class="section footer">
+  <footer class="section footer" id="section-links">
     <ul class="footer-links section-center">
       <div>
         <h5>Code</h5>
         <li>
           <i class="fab fa-github"></i>
-          <a href="http://">github</a>
+          <a href="http://github.com" target="_blank" id='profile-link'>github</a>
         </li>
         <li>
           <i class="fab fa-codepen"></i>
-          <a href="http://">codepen</a>
+          <a href="http://codepen.com" target="_blank" id='profile-link'>codepen</a>
         </li>
         <li>
           <i class="fab fa-stack-overflow"></i>
-          <a href="http://">stack overflow</a>
+          <a href="http://stackoverflow.com" target="_blank" id='profile-link'>stack overflow</a>
         </li>
       </div>
       <div>
         <h5>Photography</h5>
         <li>
           <i class="fab fa-flickr"></i>
-          <a href="http://">flickr</a>
+          <a href="http://flickr.com" target="_blank" id='profile-link'>flickr</a>
         </li>
         <li>
           <i class="fab fa-instagram"></i>
-          <a href="http://">instagram</a>
+          <a href="http://instagram.com" target="_blank" id='profile-link'>instagram</a>
         </li>
         <li>
           <i class="fab fa-facebook"></i>
-          <a href="http://">facebook</a>
+          <a href="http://facebook.com" target="_blank" id='profile-link'>facebook</a>
         </li>
       </div>
       <div>
         <h5>Design</h5>
         <li>
           <i class="fab fa-dribbble"></i>
-          <a href="http://">Dribbble</a>
+          <a href="http://dribble.com" target="_blank" id='profile-link'>Dribbble</a>
         </li>
         <li>
           <i class="fab fa-behance"></i>
-          <a href="http://">Behance</a>
+          <a href="http://behance.com" target="_blank" id='profile-link'>Behance</a>
         </li>
 
       </div>
@@ -180,11 +196,11 @@
         <h5>Video</h5>
         <li>
           <i class="fab fa-youtube"></i>
-          <a href="http://">Youtube</a>
+          <a href="http://youtube.com" target="_blank" id='profile-link'>Youtube</a>
         </li>
         <li>
           <i class="fab fa-vimeo"></i>
-          <a href="http://">Vimeo</a>
+          <a href="http://vimeo.com" target="_blank" id='profile-link'>Vimeo</a>
         </li>
 
       </div>
