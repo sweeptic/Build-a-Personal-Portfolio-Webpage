@@ -2,7 +2,8 @@
   --color-grey-dark-1: #252529;
   --color-grey-1: #d1d1d1;
   --color-white: #fff;
-  --color-grey-2: rgb(119, 119, 119);
+  --color-grey-2: #777777;
+  --color-text-muted: #6c757d;
   --color-primary-blue: #0088cc;
 }
 
@@ -69,13 +70,13 @@ small {
 .inverse-highlighted-black {
   display: inline-block;
   background-color: var(--color-grey-dark-1);
-  color: #fff;
+  color: var(--color-white);
   padding: 0 1rem;
   margin-bottom: 2rem;
 }
 
 .text-muted {
-  color: #6c757d !important;
+  color: var(--text-muted) !important;
 }
 
 .block {
@@ -102,11 +103,11 @@ small {
 
 .navbar-link {
   text-decoration: none;
-  color: #252529;
+  color: var(--color-grey-dark-1);
 }
 
 .navbar-link:hover {
-  color: #6c757d;
+  color: var(--color-text-muted);
   transition: all 0.2s;
 }
 
@@ -236,7 +237,7 @@ small {
 
 .blockquote-footer {
   font-size: 1.4rem;
-  color: #6c757d;
+  color: var(--color-text-muted);
 }
 
 .blockquote-footer::before {
